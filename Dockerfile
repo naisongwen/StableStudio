@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.18
+FROM node:16-alpine
 
 RUN apk add git
 RUN apk add --no-cache build-base yarn
