@@ -1,4 +1,4 @@
-ROM node:lts-alpine3.18
+FROM node:lts-alpine3.18
 
 RUN apk add git
 RUN apk add --no-cache build-base python3
