@@ -13,8 +13,6 @@ COPY . .
 #ENV YARN_ENABLE_INLINE_BUILDS=true
 RUN yarn
 
-EXPOSE 3000
-
 # Build the project
 # RUN yarn build
 
