@@ -1,7 +1,7 @@
 FROM node:lts-alpine3.18
 
 RUN apk add git
-RUN apk add --no-cache build-base python3
+RUN apk add --no-cache build-base yarn
 
 # Set the working directory in the container
 WORKDIR /app
@@ -12,6 +12,8 @@ COPY . .
 # Install dependencies
 #ENV YARN_ENABLE_INLINE_BUILDS=true
 RUN yarn
+
+EXPOSE 3000
 
 # Build the project
 # RUN yarn build
